@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CommentView</string>
+
+    <string name="show_hidden_comment">展开隐藏楼层</string>
+    <string name="comment">评论</string>
+    <string name="comment_hint">请输入评论内容</string>
+</resources>

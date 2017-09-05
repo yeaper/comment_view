@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_root_view"
+    tools:context="com.yyp.commentview.view.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/main_comment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@android:color/white"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:elevation="7dp">
+
+        <TextView
+            android:id="@+id/main_comment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="@string/comment"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/main_comment_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:hint="@string/comment_hint"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/main_comment_btn"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+
+</FrameLayout>

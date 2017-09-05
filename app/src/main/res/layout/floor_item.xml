@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/show_floor_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/floor_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#373737"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/floor_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/floor_num"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/floor_num"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/floor_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/floor_username"
+            android:layout_below="@id/floor_username"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/hide_floor_content"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/hide_img"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/biz_tie_comment_expand_arrow"/>
+        <TextView
+            android:id="@+id/hide_text"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_hidden_comment"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+</FrameLayout>
